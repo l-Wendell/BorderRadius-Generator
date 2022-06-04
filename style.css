@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+::selection {
+	background-color: #ff8c32;
+	color: #06113c;
+}
+
+body {
+	background-color: #06113c;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+#mainContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.input {
+	text-align: center;
+	height: 30px;
+	width: 30px;
+	outline: none;
+	color: #06113c;
+	font-weight: 500;
+}
+
+#info {
+	text-align: center;
+	margin-bottom: 40px;
+	color: #fff;
+	font-weight: 600;
+}
+
+#info a {
+	color: #ff8c32;
+	text-decoration: none;
+}
+
+#mainDiv {
+	padding: 20px;
+	background-color: #fff;
+	height: 300px;
+	width: 400px;
+}
+
+#editedDiV {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	height: 30px;
+	width: 400px;
+	background-color: #fff;
+	color: #06113c;
+	font-weight: 500;
+}
+
+#editedDiV i {
+	font-size: 13px;
+	transition: 0.7s;
+}
+
+#btn {
+	background: transparent;
+	border: none;
+	color: #06113c;
+}
+
+#btn:hover i {
+	cursor: pointer;
+	font-size: 13.5px;
+}
+
+.link {
+	display: inline-block;
+	position: relative;
+	color: #ff8c32;
+}
+
+.link:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #ff8c32;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}

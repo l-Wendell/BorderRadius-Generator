@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+			integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Border Radius</title>
+	</head>
+	<body>
+		<div id="mainContainer">
+			<div id="info">
+				<h1>Border Radius Generator</h1>
+				<p>
+					By
+					<a class="link" href="https://github.com/l-Wendell"
+						>Lucas Wendell</a
+					>
+				</p>
+			</div>
+
+			<div id="container">
+				<div id="mainDiv"></div>
+				<div id="editedDiV">
+					<p id="paragrafo">border-radius: 0px 0px 0px 0px;</p>
+					<button id="btn">
+						<i class="fa fa-clone" aria-hidden="true"></i>
+					</button>
+				</div>
+				<div id="inputDiv">
+					<input type="number" class="input input-topLeft" />
+					<input type="number" class="input input-topRight" />
+					<input type="number" class="input input-bottomRight" />
+					<input type="number" class="input input-bottomLeft" />
+				</div>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
